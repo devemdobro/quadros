@@ -1,0 +1,35 @@
+.quadros {
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    align-items: center;
+}
+
+.quadro {
+    width: 25%;
+    position: relative;
+    padding: 0 10px;
+}
+
+.quadro img {
+    width: 100%;
+}
+
+.conteudo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+@media(max-width: 600px) {
+    .quadros {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .quadro {
+        width: 100%;
+    }
+}
